@@ -1,5 +1,7 @@
 ﻿CREATE TABLE [dbo].[Products] (
-    [Id] INT NOT NULL,
+    [Id] UNIQUEIDENTIFIER NOT NULL,
+    [Name] VARCHAR(50) NOT NULL, 
+    [Balance] DECIMAL(19, 4) NOT NULL, 
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
